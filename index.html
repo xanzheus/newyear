@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Happy New Year.</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+</html>
+
+<body>
+	<section class="fireworks" id="sec1"></section>
+	<div id="moon"></div>
+
+	<section class="content" id="sec2">
+		<h2>
+			Happy New Year!
+		</h2>
+	</section>
+	<div class="buildings"></div>
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="jquery.fireworks.js"></script>
+	<script type="text/javascript">
+		$('.fireworks').fireworks({
+			sound: true,
+			opacity: 0.5,
+			width: '100%',
+			height: '100%'
+		});
+	</script>
+</body>
+
+</html>

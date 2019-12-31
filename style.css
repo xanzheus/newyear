@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #020111 10%, #3a3a52 100%);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.fireworks {
+    position: fixed;
+    z-index: 0;
+}
+
+section.content {
+    z-index: 1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+section.content h2 {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+
+    color: transparent;
+    z-index: 1;
+    margin-top: 80px;
+    font-size: 8em;
+    line-height: 0.9em;
+}
+
+#moon {
+    position: absolute;
+    right: 0;
+    display: block;
+    margin: 2rem;
+    margin-top: 100px;
+    margin-right: 150px;
+    width: 10rem;
+    height: 10rem;
+    transform: rotate(65deg);
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#moon:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -20px;
+    left: -45px;
+    width: 10rem;
+    height: 10rem;
+    border: 30px solid #f3d076;
+    border-radius: 50%;
+}
+
+.buildings {
+    height: 100vh;
+    z-index: -1;
+    margin-top: -100vh;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    background-image: url(https://library.kissclipart.com/20181217/uoe/kissclipart-building-silhouette-png-clipart-building-clip-art-4b924e2d71747b1d.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
